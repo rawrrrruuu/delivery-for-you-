@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>delivery from Natoy 💕</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    
+    body { 
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #FFE4E1 0%, #FFB6C1 100%);
+      text-align: center; 
+      padding: 20px;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    .box {
+      background: rgba(255,255,255,0.95); 
+      max-width: 420px; 
+      margin: 30px auto; 
+      padding: 30px; 
+      border-radius: 25px; 
+      box-shadow: 0 10px 30px rgba(255,105,180,0.3);
+      position: relative;
+      min-height: 550px;
+      border: 3px solid #FFB6C1;
+    }
+    h1 { 
+      color: #FF1493; 
+      font-size: 28px; 
+      font-weight: 700;
+      text-shadow: 2px 2px 0px #FFD1DC;
+    }
+    button {
+      background: linear-gradient(45deg, #FF69B4, #FF1493); 
+      color: white; 
+      border: none; 
+      padding: 15px 35px; 
+      border-radius: 50px; 
+      font-size: 18px; 
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 15px;
+      box-shadow: 0 5px 15px rgba(255,20,147,0.4);
+      transition: transform 0.2s;
+    }
+    button:hover { transform: scale(1.05); }
+    button:active { transform: scale(0.95); }
+    
+    #scene {
+      position: relative;
+      height: 300px;
+      margin: 20px 0;
+    }
+    #house { 
+      font-size: 90px; 
+      position: absolute;
+      right: 20px;
+      top: 50px;
+      z-index: 1;
+    }
+    
+    /* Anime Boy with Carton */
+    #boy {
+      width: 60px;
+      height: 80px;
+      position: absolute;
+      left: -80px;
+      top: 180px;
+      transition: left 3s ease-in-out;
+      z-index: 3;
+    }
+    #boy.move { left: 180px; }
+    #boy svg { width: 100%; height: 100%; }
+    
+    #carton {
+      font-size: 45px;
+      position: absolute;
+      left: -30px;
+      top: 195px;
+      transition: left 3s ease-in-out;
+      z-index      position: absolute;
+      right: 20px;
+      top: 50px;
+      z-index: 1;
+    }
+    
+    /* Anime Boy with Cart */
+    #boy {
+      width: 60px;
+      height: 80px;
+      position: absolute;
+      left: -80px;
+      top: 180px;
+      transition: left 3s ease-in-out;
+      z-index: 3;
+    }
+    #boy.move { left: 180px; }
+    #boy svg { width: 100%; height: 100%; }
+    
+    /* Anime Girl */
+    #girl {
+      width: 50px;
+      height: 75px;
+      position: absolute;
+      right: 50px;
+      top: 60px;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+      z-index: 2;
+    }
+    #girl.show { opacity: 1; }
+    #girl svg { width: 100%; height: 100%; }
+    
+    #cart {
+      font-size: 50px;
+      position: absolute;
+      left: -30px;
+      top: 190px;
+      transition: left 3s ease-in-out;
+      z-index: 2;
+    }
+    #cart.move { left: 230px; }
+    
+    #knock { 
+      font-size: 40px; 
+      position: absolute;
+      right: 80px;
+      top: 90px;
+      opacity: 0;
+      z-index: 4;
+    }
+    #knock.show { 
+      opacity: 1;
+      animation: knock 0.5s 3; 
+    }
+    @keyframes knock {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(5px); }
+    }
+    
+    #loveMsg { 
+      font-weight: 700; 
+      color: #FF1493; 
+      margin-top: 15px; 
+      font-size: 20px;
+      min-height: 60px;
+      line-height: 1.4;
+    }
+    .hidden { display: none; }
+    
+    #couple {
+      width: 120px;
+      height: 90px;
+      margin: 10px auto;
+      animation: pulse 1.2s infinite; 
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    
+    .hearts {
+      font-size: 25px;
+      position: absolute;
+      opacity: 0;
+      animation: float 3s ease-in infinite;
+    }
+    #finalSection.show .hearts { opacity: 1; }
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-80px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>delivery from Natoy 💕</h1>
+    
+    <div id="scene">
+      <div id="house">🏠</div>
+      
+      <!-- Anime Girl -->
+      <div id="girl">
+        <svg viewBox="0 0 100 150">
+          <circle cx="50" cy="30" r="20" fill="#FFDBAC"/>
+          <circle cx="42" cy="28" r="2" fill="#000"/>
+          <circle cx="58" cy="28" r="2" fill="#000"/>
+          <path d="M 45 35 Q 50 38 55 35" stroke="#FF69B4" fill="none" stroke-width="2"/>
+          <path d="M 30 25 Q 50 5 70 25 Q 50 15 30 25" fill="#8B4513"/>
+          <rect x="35" y="50" width="30" height="40" rx="5" fill="#FF69B4"/>
+          <rect x="25" y="55" width="15" height="30" rx="7" fill="#FFDBAC"/>
+          <rect x="60" y="55" width="15" height="30" rx="7" fill="#FFDBAC"/>
+          <rect x="40" y="90" width="10" height="35" fill="#4B0082"/>
+          <rect x="50" y="90" width="10" height="35" fill="#4B0082"/>
+        </svg>
+      </div>
+      
+      <!-- Anime Boy -->
+      <div id="boy">
+        <svg viewBox="0 0 100 150">
+          <circle cx="50" cy="30" r="20" fill="#FFDBAC"/>
+          <circle cx="42" cy="28" r="2" fill="#000"/>
+          <circle cx="58" cy="28" r="2" fill="#000"/>
+          <path d="M 45 35 L 55 35" stroke="#000" stroke-width="2"/>
+          <path d="M 30 25 L 35 10 L 65 10 L 70 25" fill="#000"/>
+          <rect x="35" y="50" width="30" height="40" rx="5" fill="#4169E1"/>
+          <rect x="20" y="55" width="15" height="30" rx="7" fill="#FFDBAC"/>
+          <rect x="65" y="55" width="15" height="30" rx="7" fill="#FFDBAC"/>
+          <rect x="40" y="90" width="10" height="35" fill="#000080"/>
+          <rect x="50" y="90" width="10" height="35" fill="#000080"/>
+        </svg>
+      </div>
+      
+      <div id="cart">🛒</div>
+      <div id="knock">👊👊👊</div>
+    </div>
+    
+    <button id="deliverBtn" onclick="startDelivery()">Open delivery</button>
+    
+    <div id="finalSection" class="hidden">
+      <div class="hearts" style="left: 15%; top: 50%;">💕</div>
+      <div class="hearts" style="left: 85%; top: 50%; animation-delay: 0.5s;">💕</div>
+      
+      <!-- Anime Couple Hugging -->
+      <div id="couple">
+        <svg viewBox="0 0 200 150">
+          <circle cx="60" cy="40" r="18" fill="#FFDBAC"/>
+          <path d="M 45 35 L 50 20 L 75 20 L 75 35" fill="#000"/>
+          <rect x="48" y="58" width="25" height="35" rx="5" fill="#4169E1"/>
+          <rect x="40" y="60" width="12" height="25" rx="6" fill="#FFDBAC"/>
+          
+          <circle cx="120" cy="40" r="18" fill="#FFDBAC"/>
+          <path d="M 105 35 Q 120 15 135 35 Q 120 25 105 35" fill="#8B4513"/>
+          <rect x="108" y="58" width="25" height="35" rx="5" fill="#FF69B4"/>
+          <rect x="128" y="60" width="12" height="25" rx="6" fill="#FFDBAC"/>
+          
+          <circle cx="85" cy="30" r="8" fill="#FF1493"/>
+          <text x="78" y="35" font-size="12" fill="white">♥</text>
+        </svg>
+      </div>
+      
+      <p id="loveMsg">I love you so much, baby<br>from Natoy 💕</p>
+      <button onclick="reset()">Deliver ulit?</button>
+    </div>
+  </div>
+
+  <script>
+    function startDelivery() {
+      document.getElementById('deliverBtn').classList.add('hidden');
+      document.getElementById('boy').classList.add('move');
+      document.getElementById('cart').classList.add('move');
+      
+      setTimeout(() => {
+        document.getElementById('knock').classList.add('show');
+      }, 3000);
+      
+      setTimeout(() => {
+        document.getElementById('knock').classList.remove('show');
+        document.getElementById('girl').classList.add('show');
+      }, 5000);
+      
+      setTimeout(() => {
+        document.getElementById('boy').style.display = 'none';
+        document.getElementById('girl').style.display = 'none';
+        document.getElementById('cart').style.display = 'none';
+        document.getElementById('house').style.display = 'none';
+        document.getElementById('finalSection').classList.remove('hidden');
+        document.getElementById('finalSection').classList.add('show');
+      }, 6500);
+    }
+
+    function reset() {
+      document.getElementById('boy').classList.remove('move');
+      document.getElementById('cart').classList.remove('move');
+      document.getElementById('boy').style.display = 'block';
+      document.getElementById('girl').style.display = 'block';
+      document.getElementById('cart').style.display = 'block';
+      document.getElementById('house').style.display = 'block';
+      document.getElementById('girl').classList.remove('show');
+      document.getElementById('finalSection').classList.add('hidden');
+      document.getElementById('finalSection').classList.remove('show');
+      document.getElementById('deliverBtn').classList.remove('hidden');
+    }
+  </script>
+</body>
+  </html>
